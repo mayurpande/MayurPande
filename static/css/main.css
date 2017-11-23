@@ -32,6 +32,9 @@ img{
   max-width:100%;
 }
 
+a{
+  text-decoration: none;
+}
 
 /*****************************************
 HEADER + Background Image
@@ -45,13 +48,131 @@ HEADER + Background Image
   background:
   /*linear-gradient(0deg,#000,transparent),*/
   url(/static/img/background.jpg) no-repeat center;
-
   background-size:cover;
-  position:relative;
+}
+
+
+
+
+header{
+  position: fixed;
+  width:100%;
+  height:100px;
+  background-color:#D6D6E8;
+  box-shadow: 0px 0px 5px #888;
+}
+
+header .wrapper{
+  width:100%;
+  padding:0;
+  margin-top:20px;
+}
+
+#logo{
+  float:left;
+  margin-left:20px;
+}
+
+.icon {
+  float: right;
+
+  margin-top:25px;
+  /*top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);*/
+  width:80px;
+  height:50px;
+  cursor:pointer;
 
 
 }
 
-header{
-  position: fixed;
+.hamburger{
+  /*margin-top:50px;*/
+  width: 50px;
+  height:6px;
+  background:#000;
+  cursor:pointer;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: .5s;
+  float:right;
+
+}
+
+.hamburger:before,
+.hamburger:after{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:6px;
+  background:#000;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  transition: .5s;
+
+
+}
+
+.hamburger:before{
+  top: -16px;
+}
+.hamburger:after{
+  top: 16px;
+
+}
+
+
+.icon.active .hamburger{
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before{
+  top:0;
+  transform:rotate(45deg);
+
+}
+
+.icon.active .hamburger:after{
+  top:0;
+  transform:rotate(135deg);
+
+}
+
+
+
+header nav ul{
+  overflow: hidden;
+  background:#505050;
+  height:0;
+  padding:0;
+  margin:0;
+
+
+}
+
+header nav ul.open{
+  height:auto;
+  clear:both;
+  margin-top:100px;
+
+}
+
+header nav ul li{
+  width:100%;
+  text-align: center;
+  margin:0;
+  float:none;
+
+}
+
+header nav ul li a{
+  border-bottom:1px solid #404040;
+  color:#fff;
+  padding:10px;
+  display:block;
+  margin:0;
+  width:100%;
 }
