@@ -3,11 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Mayur Pande</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylsheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
   </head>
   <body>
     {% include 'nav.html' %}
-  </body>
+    <div id="background"></div>
+    {% block content %}
 
+    {% endblock %}
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='js/hamburger.js')}}" type="text/javascript"></script>
+  </body>
 </html>
