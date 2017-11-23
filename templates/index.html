@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Mayur Pande</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylsheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
   </head>
   <body>
     {% include 'nav.html' %}
+    <div id="background"></div>
     {% block content %}
+
     {% endblock %}
   </body>
 
