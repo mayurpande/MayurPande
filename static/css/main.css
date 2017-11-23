@@ -49,6 +49,7 @@ HEADER + Background Image
   /*linear-gradient(0deg,#000,transparent),*/
   url(/static/img/background.jpg) no-repeat center;
   background-size:cover;
+  background-attachment: fixed;
 }
 
 
