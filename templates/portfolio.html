@@ -19,7 +19,7 @@
     <div class="portfolio">
       {% for x in data %}
         <div class="port-items">
-          <a href='#'>
+          <a href='{{ url_for('portfolio',title=x.port_title) }}'>
             <img src="/static/img/{{ x.port_img }}" alt="{{ x.port_title }}" />
             <p>{{ x.port_title }}</p>
           </a>
