@@ -13,10 +13,14 @@ def main():
         return render_template('portfolio.html',data=rows)
 
 
-@app.route('/portfolio/<title>')
-def portfolio(title):
-    print(title)
-    return ""
+# @app.route('/portfolio/<title>')
+# def portfolio(title):
+#     with connection.cursor() as cursor:
+#         select_port_content = "SELECT * FROM port_content WHERE cont_title = %s"
+#         cursor.execute(select_port_content,(title),)
+#         rows = cursor.fetchall()
+#
+#         return render_template('port-content.html',data=rows)
 
 
 if __name__ == "__main__":
