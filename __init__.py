@@ -10,7 +10,6 @@ def main():
         select_port_data = "SELECT * FROM port_items"
         cursor.execute(select_port_data)
         rows = cursor.fetchall()
-        print(rows)
         return render_template('portfolio.html',data=rows)
 
 
