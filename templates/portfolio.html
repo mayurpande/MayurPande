@@ -8,7 +8,7 @@
     <h1>(Wannabe) Developer</h1>
     <h3>Coding one day at a time</h3>
   </div>
-<section>
+</section>
 
 <section>
 
@@ -17,8 +17,15 @@
     </div>
 
     <div class="portfolio">
-      <div class="port-items">
-      </div>
+      {% for x in data %}
+        <div class="port-items">
+          <a href='#'>
+            <img src="/static/img/{{ x.port_img }}" alt="{{ x.port_title }}" />
+            <p>{{ x.port_title }}</p>
+          </a>
+        </div>
+
+      {% endfor %}
     </div>
 
 
