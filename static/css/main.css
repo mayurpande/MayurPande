@@ -36,6 +36,10 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-size: 1.5em;
+}
+
 /*****************************************
 HEADER + Background Image
 *****************************************/
@@ -65,9 +69,6 @@ HEADER + Background Image
 
 
 
-#job-role h1{
-  font-size: 1.5em;
-}
 
 
 #job-role h3{
@@ -203,9 +204,18 @@ Header styles for different tabs (links)
 ***************************************/
 .title{
   text-align: center;
-  margin-top:100px;
+  margin-top:50px;
 }
 
 /***************************************
 Portfolio
 ****************************************/
+
+.portfolio{
+  display:flex;
+  flex-direction: column;
+}
+
+.port-items{
+  margin-bottom:10px;
+}
