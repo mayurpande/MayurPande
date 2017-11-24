@@ -13,5 +13,11 @@ def main():
         return render_template('portfolio.html',data=rows)
 
 
+@app.route('/portfolio/<title>')
+def portfolio(title):
+    print(title)
+    return ""
+
+
 if __name__ == "__main__":
     app.run(debug=True)
