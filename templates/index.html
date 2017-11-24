@@ -8,10 +8,11 @@
   </head>
   <body>
     {% include 'nav.html' %}
-    <div id="background"></div>
-    {% block content %}
 
-    {% endblock %}
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
 
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
