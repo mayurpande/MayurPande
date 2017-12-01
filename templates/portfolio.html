@@ -24,7 +24,9 @@
           <div class="port-items">
             <a href="#openModal|{{ x.id }}">
               <img src="/static/img/{{ x.port_img }}" alt="{{ x.port_title }}" />
-              <!-- <div class="textHover">{{ x.port_tile }}</div> -->
+              <div class="overlay">
+                <div class="textHover">{{ x.port_title }}</div>
+              </div>
               <p id="port-title">{{ x.port_title }}</p>
 
             </a>

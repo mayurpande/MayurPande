@@ -29,7 +29,7 @@ body{
 }
 
 .container{
-  max-width:960px;
+  max-width:1060px;
   margin:0 auto;
 }
 
@@ -304,6 +304,10 @@ Portfolio
 
 .site-link-items{
   margin-right:10px;
+}
+
+.overlay{
+  display:none;
 }
 
 
