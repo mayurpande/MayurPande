@@ -29,7 +29,7 @@ body{
 }
 
 .container{
-  max-width:960px;
+  max-width:1060px;
   margin:0 auto;
 }
 
@@ -306,6 +306,9 @@ Portfolio
   margin-right:10px;
 }
 
+.overlay{
+  display:none;
+}
 
 /****************************************
 ABOUT
