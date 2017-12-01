@@ -10,6 +10,10 @@
 	.site-links{
 		width:50%;
 	}
+
+	.about-flexer img{
+		width:25%;
+	}
 }
 
 
@@ -91,6 +95,11 @@
 		width:50%;
 	}
 
+	#contact-text{
+	  width:75%;
+	  margin:0 auto;
+	}
+
 
 
 }
@@ -113,7 +122,7 @@
 
 
 	.about-flexer{
-		width:50%;
+		width:100%;
 		text-align: left;
 	}
 
@@ -124,6 +133,10 @@
 
 	.modalDialog > div {
 		margin:10% auto;
+	}
+
+	#contact-text{
+		width:100%;
 	}
 
 
