@@ -16,6 +16,10 @@
 
 
 @media screen and (min-width:768px){
+
+	body{
+		font-size:100%;
+	}
 	#job-role{
 		top:17%;
 	}
