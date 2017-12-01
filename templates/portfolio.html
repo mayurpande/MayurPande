@@ -2,36 +2,139 @@
 
 {% block content %}
 
+
 <section>
   <div id="background"></div>
   <div id="job-role">
-    <h1>(Wannabe) Developer</h1>
+    <h1>Developer</h1>
     <h3>Coding one day at a time</h3>
   </div>
 </section>
 
-<section>
 
-    <div class="title">
-      <h1>Portfolio</h1>
-    </div>
 
-    <div class="portfolio">
-      {% for x in data %}
-        <div class="port-items">
-            <img src="/static/img/{{ x.port_img }}" alt="{{ x.port_title }}" />
-            <p>{{ x.port_title }}</p>
-            <p>Flask, BeautifulSoup, MySQL</p>
+<section id="portfolio">
+    <div class="container">
+      <div class="title">
+        <h1>Portfolio</h1>
+      </div>
 
-        </div>
+      <div class="portfolio">
+        {% for x in data %}
+          <div class="port-items">
+            <a href="#openModal|{{ x.id }}">
+              <img src="/static/img/{{ x.port_img }}" alt="{{ x.port_title }}" />
+              <!-- <div class="textHover">{{ x.port_tile }}</div> -->
+              <p id="port-title">{{ x.port_title }}</p>
 
-      {% endfor %}
+            </a>
+            <div id="openModal|{{ x.id }}" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close">X</a>
+                  {% autoescape false %}
+                    {{ x.port_modal }}
+                  {% endautoescape %}
+                  <div class="site-links">
+                    <div class="site-link-items">
+                      {% if x.github %}
+                        <a href="{{ x.github }}">View on Github</a>
+                      {% else %}
+                        <a>Code available on request</a>
+                      {% endif %}
+                    </div>
+                    <div class="site-link-items">
+                      <a href="{{ x.site }}" target="_blank">View live site</a>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+        {% endfor %}
+      </div>
     </div>
 
 
 
 
 </section>
+
+
+<section>
+
+  <div id="about">
+
+    <div class="container">
+      <div id="about-container">
+
+        <h1>About</h1>
+
+
+        <div class="about-flex">
+          <div class="about-flexer">
+            <img src="/static/img/mayur.jpg" alt="mayur pic" />
+          </div>
+          <div class="about-flexer">
+            <p>Hi I am Mayur! Thank you for dropping by my page.</p>
+            <p>This is my personal portfolio showcasing some of my favourite work to date.</p>
+            <p>I am from London and have lived here my whole life.</p>
+            <p>I am an aspiring developer that likes working with Python, although I do play around with some Javascript and PHP once in a while.</p>
+            <p>Apart from coding I like to keep my mind at zen by practicing yoga and playing football, and on weekends you would most likely find me cycling up box hill (if it isn't raining!).</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<section>
+
+  <div id="contact">
+
+    <div class="container">
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+
+      <div id="contact-info">
+        <p>If you would like to get in touch you can contact me on my email:</p>
+        <p><a href="mailto:mayur@mayurpande.com">mayur@mayurpande.com</a></p>
+        <p>Or via any of these social media platforms...</p>
+      </div>
+
+      <div class="social-media">
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/mayur-pande-9a427472/">
+            <img src="/static/img/linkedin.png" alt='linkedin' />
+          </a>
+        </div>
+        <div class="icons">
+          <a href="https://twitter.com/mayurpandeuk">
+            <img src="/static/img/twitter.png" alt='twitter' />
+          </a>
+        </div>
+        <div class="icons">
+          <a href="https://github.com/mayurpande">
+            <img src="/static/img/git.png" alt='github' />
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+ <br />
+ <br />
+</section>
+
+
 
 
 
