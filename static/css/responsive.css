@@ -113,7 +113,12 @@
 		position: relative;
 	}
 
+	.port-item a img{
+		object-fit: contain;
+	}
+
 	.overlay{
+		display: block;
 		position:absolute;
 		top:0;
 		bottom:0;
@@ -158,6 +163,7 @@
 	.about-flexer img{
 		width:40%;
 		margin-left:150px;
+		margin-top:20px;
 	}
 
 	.modalDialog > div {
@@ -166,6 +172,10 @@
 
 	#contact-text{
 		width:100%;
+	}
+
+	.social-media{
+		width:20%;
 	}
 
 
