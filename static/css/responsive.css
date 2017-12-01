@@ -68,7 +68,14 @@
 
 	}
 
-	
+	.modalDialog > div {
+		width: 500px;
+	}
+
+
+	.site-links{
+		width:50%;
+	}
 
 
 
@@ -99,6 +106,10 @@
 	.about-flexer img{
 		width:40%;
 		margin-left:150px;
+	}
+
+	.modalDialog > div {
+		margin:10% auto;
 	}
 
 
