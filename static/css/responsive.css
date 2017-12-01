@@ -9,4 +9,97 @@
 	#job-role{
 		top:17%;
 	}
+
+	#job-role h1{
+		font-size:2em;
+	}
+
+	#job-role h3{
+		font-size:1.5em;
+	}
+
+	.portfolio{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width:100%;
+	}
+
+	.port-items{
+		width:46%;
+		margin:2%;
+	}
+
+	.about-flex img{
+
+	  width:20%;
+	}
+
+	.social-media{
+
+	  width:30%;
+
+	}
+
+	.icon{
+		display:none;
+	}
+
+	header .wrapper{
+		display:flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	header nav ul{
+		overflow:visible;
+		display:flex;
+		flex-direction: row;
+		margin-top:12px;
+
+	}
+
+	header nav ul li{
+		margin-right:10px;
+	}
+
+	header nav ul li a{
+	  border-bottom:none;
+	  color:#000;
+
+	}
+
+	
+
+
+
+}
+
+
+@media screen and (min-width:960px){
+	.port-items{
+		background-color: inherit;
+	}
+
+
+	#port-title{
+		display:none;
+	}
+
+	.about-flex{
+		flex-direction: row;
+	}
+
+
+
+	.about-flexer{
+		width:50%;
+		text-align: left;
+	}
+
+	.about-flexer img{
+		width:40%;
+		margin-left:150px;
+	}
+
+
 }
